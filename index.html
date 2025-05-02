@@ -425,14 +425,19 @@
           <a href="https://www.google.com/maps/place/Sukoon+Ghar/@43.7905554,-79.758471,17z/data=!3m1!4b1!4m6!3m5!1s0x882b19fdc3898557:0xa3378e557a6d6f3b!8m2!3d43.7905516!4d-79.7558961!16s%2Fg%2F11x8jsz5s5?entry=ttu&g_ep=EgoyMDI1MDQyOS4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" target="_blank" class="map-btn-small">Map</a>
         </div>
       </div>
-      <form class="cafe-contact-form" id="cafeContactForm" autocomplete="off">
+      <form class="cafe-contact-form" action="https://formsubmit.co/jenil480@gmail.com" method="POST">
+        <!-- FormSubmit configuration -->
+        <input type="hidden" name="_next" value="https://sukoonghar.com">
+        <input type="hidden" name="_subject" value="New Contact Form Submission">
+        <input type="hidden" name="_captcha" value="false">
+        
         <div class="form-group">
           <label for="fullName">Full Name</label>
-          <input type="text" id="fullName" name="fullName" required />
+          <input type="text" id="fullName" name="name" required>
         </div>
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
+          <input type="email" id="email" name="email" required>
         </div>
         <div class="form-group">
           <label for="message">Message</label>
@@ -442,25 +447,7 @@
       </form>
     </div>
   </section>
-  <!-- Footer Section -->
-  <!--
-  <footer class="footer-section">
-    <div class="footer-info">
-      <div>
-        <i class="fas fa-phone-alt"></i>
-        <span>(123) 456-7890</span>
-      </div>
-      <div>
-        <i class="fas fa-envelope"></i>
-        <span>hello@sukoonghar.com</span>
-      </div>
-      <div>
-        <i class="fas fa-clock"></i>
-        <span>Mon–Sun: 8am – 10pm</span>
-      </div>
-    </div>
-  </footer>
-  -->
+  
   <footer class="footer">
   <p>© 2025 All Rights Reserved | Maintenance and Designed by Jenil Shah</p>
 </footer>
