@@ -35,4 +35,17 @@ if (contactForm) {
     e.preventDefault();
     alert('Thank you for reaching out!');
   });
-} 
+}
+
+// Close mobile menu when a link is clicked
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const navToggle = document.getElementById('nav-toggle');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            // Close the mobile menu
+            navToggle.checked = false;
+        });
+    });
+}); 

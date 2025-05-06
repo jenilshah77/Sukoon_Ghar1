@@ -6,6 +6,7 @@
   --dark-brown: #5c4032;
   --white: #fff;
   --shadow: 0 2px 8px rgba(60, 40, 20, 0.08);
+  --navbar-height: 60px;
 }
 
 * {
@@ -76,6 +77,7 @@ body {
 @media screen and (max-width: 768px) {
   .nav-container {
     position: relative;
+    background: var(--beige);
   }
   
   .nav-toggle-label {
@@ -92,7 +94,7 @@ body {
   .nav-toggle-label span::before,
   .nav-toggle-label span::after {
     display: block;
-    background: #fff;
+    background: var(--brown);
     height: 2px;
     width: 25px;
     position: relative;
@@ -116,7 +118,7 @@ body {
     position: absolute;
     top: 100%;
     right: 0;
-    background: rgba(0, 0, 0, 0.9);
+    background: var(--beige);
     width: 100%;
     transform: scale(1, 0);
     transform-origin: top;
@@ -125,6 +127,7 @@ body {
     flex-direction: column;
     padding: 0;
     margin: 0;
+    box-shadow: 0 4px 12px rgba(60, 40, 20, 0.15);
   }
   
   .nav-links li {
@@ -137,6 +140,14 @@ body {
   .nav-links a {
     display: block;
     padding: 1rem;
+    color: var(--dark-brown);
+    font-weight: 600;
+    background: var(--beige);
+  }
+  
+  .nav-links a:hover {
+    background: var(--green);
+    color: var(--brown);
   }
   
   .nav-toggle:checked ~ .nav-links {
@@ -250,10 +261,27 @@ body {
   }
 }
 
-/* Redesigned About Section */
+/* Section Styles */
+section {
+  scroll-margin-top: var(--navbar-height);
+  padding: 4rem 1.5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: var(--brown);
+}
+
+/* About Section */
 .about-section {
   background: var(--beige);
-  padding: 5rem 1rem 3rem 1rem;
+  padding-top: calc(var(--navbar-height) + 2rem);
 }
 
 .about-container {
@@ -359,10 +387,10 @@ body {
   }
 }
 
-/* Menu Section Redesign */
+/* Menu Section */
 .menu-section {
-  background: #f5eee6;
-  padding: 5rem 1rem 3rem 1rem;
+  background: var(--white);
+  padding-top: calc(var(--navbar-height) + 2rem);
 }
 
 .menu-section h2 {
@@ -976,8 +1004,8 @@ section {
 
 /* New styles for the Find Us section */
 .findus-section {
-  padding: 5rem 1rem 3rem 1rem;
-  background: var(--green);
+  background: var(--beige);
+  padding-top: calc(var(--navbar-height) + 2rem);
   animation: fadeInUp 1s;
 }
 .findus-section h2 {
