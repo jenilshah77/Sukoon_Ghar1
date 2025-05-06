@@ -7,6 +7,28 @@
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    .drink-info, .snack-info, .bakery-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.2rem;
+    }
+    .footer {
+      background-color: #fff9f3;
+      text-align: center;
+      padding: 20px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      color: #4b2e2e;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation Bar -->
@@ -78,222 +100,224 @@
       <!-- Drinks Category -->
       <details class="menu-category">
         <summary>Drinks <span class="item-count">(31 items)</span></summary>
-        <div class="drinks-grid-cards">
-          <div class="drink-card-img">
-            <img src="images/drink1.jpg" alt="Drink 1">
-            <div class="drink-info">
-              <span class="drink-name">Drink 1</span>
-              <span class="drink-price">$3.99</span>
+        <div class="menu-content">
+          <div class="drinks-grid-cards">
+            <div class="drink-card-img">
+              <img src="images/drink1.jpg" alt="Drink 1">
+              <div class="drink-info">
+                <span class="drink-name">Drink 1</span>
+                <span class="drink-price">$3.99</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink2.jpg" alt="Drink 2">
-            <div class="drink-info">
-              <span class="drink-name">Drink 2</span>
-              <span class="drink-price">$4.50</span>
+            <div class="drink-card-img">
+              <img src="images/drink2.jpg" alt="Drink 2">
+              <div class="drink-info">
+                <span class="drink-name">Drink 2</span>
+                <span class="drink-price">$4.50</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink3.jpg" alt="Drink 3">
-            <div class="drink-info">
-              <span class="drink-name">Drink 3</span>
-              <span class="drink-price">$4.25</span>
+            <div class="drink-card-img">
+              <img src="images/drink3.jpg" alt="Drink 3">
+              <div class="drink-info">
+                <span class="drink-name">Drink 3</span>
+                <span class="drink-price">$4.25</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink4.jpg" alt="Drink 4">
-            <div class="drink-info">
-              <span class="drink-name">Drink 4</span>
-              <span class="drink-price">$3.75</span>
+            <div class="drink-card-img">
+              <img src="images/drink4.jpg" alt="Drink 4">
+              <div class="drink-info">
+                <span class="drink-name">Drink 4</span>
+                <span class="drink-price">$3.75</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink5.jpg" alt="Drink 5">
-            <div class="drink-info">
-              <span class="drink-name">Drink 5</span>
-              <span class="drink-price">$4.99</span>
+            <div class="drink-card-img">
+              <img src="images/drink5.jpg" alt="Drink 5">
+              <div class="drink-info">
+                <span class="drink-name">Drink 5</span>
+                <span class="drink-price">$4.99</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink6.jpg" alt="Drink 6">
-            <div class="drink-info">
-              <span class="drink-name">Drink 6</span>
-              <span class="drink-price">$3.50</span>
+            <div class="drink-card-img">
+              <img src="images/drink6.jpg" alt="Drink 6">
+              <div class="drink-info">
+                <span class="drink-name">Drink 6</span>
+                <span class="drink-price">$3.50</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink7.jpg" alt="Drink 7">
-            <div class="drink-info">
-              <span class="drink-name">Drink 7</span>
-              <span class="drink-price">$4.10</span>
+            <div class="drink-card-img">
+              <img src="images/drink7.jpg" alt="Drink 7">
+              <div class="drink-info">
+                <span class="drink-name">Drink 7</span>
+                <span class="drink-price">$4.10</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink8.jpg" alt="Drink 8">
-            <div class="drink-info">
-              <span class="drink-name">Drink 8</span>
-              <span class="drink-price">$3.80</span>
+            <div class="drink-card-img">
+              <img src="images/drink8.jpg" alt="Drink 8">
+              <div class="drink-info">
+                <span class="drink-name">Drink 8</span>
+                <span class="drink-price">$3.80</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink9.jpg" alt="Drink 9">
-            <div class="drink-info">
-              <span class="drink-name">Drink 9</span>
-              <span class="drink-price">$4.60</span>
+            <div class="drink-card-img">
+              <img src="images/drink9.jpg" alt="Drink 9">
+              <div class="drink-info">
+                <span class="drink-name">Drink 9</span>
+                <span class="drink-price">$4.60</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink10.jpg" alt="Drink 10">
-            <div class="drink-info">
-              <span class="drink-name">Drink 10</span>
-              <span class="drink-price">$3.95</span>
+            <div class="drink-card-img">
+              <img src="images/drink10.jpg" alt="Drink 10">
+              <div class="drink-info">
+                <span class="drink-name">Drink 10</span>
+                <span class="drink-price">$3.95</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink11.jpg" alt="Drink 11">
-            <div class="drink-info">
-              <span class="drink-name">Drink 11</span>
-              <span class="drink-price">$4.20</span>
+            <div class="drink-card-img">
+              <img src="images/drink11.jpg" alt="Drink 11">
+              <div class="drink-info">
+                <span class="drink-name">Drink 11</span>
+                <span class="drink-price">$4.20</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink12.jpg" alt="Drink 12">
-            <div class="drink-info">
-              <span class="drink-name">Drink 12</span>
-              <span class="drink-price">$4.75</span>
+            <div class="drink-card-img">
+              <img src="images/drink12.jpg" alt="Drink 12">
+              <div class="drink-info">
+                <span class="drink-name">Drink 12</span>
+                <span class="drink-price">$4.75</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink13.jpg" alt="Drink 13">
-            <div class="drink-info">
-              <span class="drink-name">Drink 13</span>
-              <span class="drink-price">$3.60</span>
+            <div class="drink-card-img">
+              <img src="images/drink13.jpg" alt="Drink 13">
+              <div class="drink-info">
+                <span class="drink-name">Drink 13</span>
+                <span class="drink-price">$3.60</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink14.jpg" alt="Drink 14">
-            <div class="drink-info">
-              <span class="drink-name">Drink 14</span>
-              <span class="drink-price">$4.30</span>
+            <div class="drink-card-img">
+              <img src="images/drink14.jpg" alt="Drink 14">
+              <div class="drink-info">
+                <span class="drink-name">Drink 14</span>
+                <span class="drink-price">$4.30</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink15.jpg" alt="Drink 15">
-            <div class="drink-info">
-              <span class="drink-name">Drink 15</span>
-              <span class="drink-price">$3.85</span>
+            <div class="drink-card-img">
+              <img src="images/drink15.jpg" alt="Drink 15">
+              <div class="drink-info">
+                <span class="drink-name">Drink 15</span>
+                <span class="drink-price">$3.85</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink16.jpg" alt="Drink 16">
-            <div class="drink-info">
-              <span class="drink-name">Drink 16</span>
-              <span class="drink-price">$4.55</span>
+            <div class="drink-card-img">
+              <img src="images/drink16.jpg" alt="Drink 16">
+              <div class="drink-info">
+                <span class="drink-name">Drink 16</span>
+                <span class="drink-price">$4.55</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink17.jpg" alt="Drink 17">
-            <div class="drink-info">
-              <span class="drink-name">Drink 17</span>
-              <span class="drink-price">$3.70</span>
+            <div class="drink-card-img">
+              <img src="images/drink17.jpg" alt="Drink 17">
+              <div class="drink-info">
+                <span class="drink-name">Drink 17</span>
+                <span class="drink-price">$3.70</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink18.jpg" alt="Drink 18">
-            <div class="drink-info">
-              <span class="drink-name">Drink 18</span>
-              <span class="drink-price">$4.80</span>
+            <div class="drink-card-img">
+              <img src="images/drink18.jpg" alt="Drink 18">
+              <div class="drink-info">
+                <span class="drink-name">Drink 18</span>
+                <span class="drink-price">$4.80</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink19.jpg" alt="Drink 19">
-            <div class="drink-info">
-              <span class="drink-name">Drink 19</span>
-              <span class="drink-price">$3.90</span>
+            <div class="drink-card-img">
+              <img src="images/drink19.jpg" alt="Drink 19">
+              <div class="drink-info">
+                <span class="drink-name">Drink 19</span>
+                <span class="drink-price">$3.90</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink20.jpg" alt="Drink 20">
-            <div class="drink-info">
-              <span class="drink-name">Drink 20</span>
-              <span class="drink-price">$4.40</span>
+            <div class="drink-card-img">
+              <img src="images/drink20.jpg" alt="Drink 20">
+              <div class="drink-info">
+                <span class="drink-name">Drink 20</span>
+                <span class="drink-price">$4.40</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink21.jpg" alt="Drink 21">
-            <div class="drink-info">
-              <span class="drink-name">Drink 21</span>
-              <span class="drink-price">$3.55</span>
+            <div class="drink-card-img">
+              <img src="images/drink21.jpg" alt="Drink 21">
+              <div class="drink-info">
+                <span class="drink-name">Drink 21</span>
+                <span class="drink-price">$3.55</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink22.jpg" alt="Drink 22">
-            <div class="drink-info">
-              <span class="drink-name">Drink 22</span>
-              <span class="drink-price">$4.65</span>
+            <div class="drink-card-img">
+              <img src="images/drink22.jpg" alt="Drink 22">
+              <div class="drink-info">
+                <span class="drink-name">Drink 22</span>
+                <span class="drink-price">$4.65</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink23.jpg" alt="Drink 23">
-            <div class="drink-info">
-              <span class="drink-name">Drink 23</span>
-              <span class="drink-price">$3.80</span>
+            <div class="drink-card-img">
+              <img src="images/drink23.jpg" alt="Drink 23">
+              <div class="drink-info">
+                <span class="drink-name">Drink 23</span>
+                <span class="drink-price">$3.80</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink24.jpg" alt="Drink 24">
-            <div class="drink-info">
-              <span class="drink-name">Drink 24</span>
-              <span class="drink-price">$4.35</span>
+            <div class="drink-card-img">
+              <img src="images/drink24.jpg" alt="Drink 24">
+              <div class="drink-info">
+                <span class="drink-name">Drink 24</span>
+                <span class="drink-price">$4.35</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink25.jpg" alt="Drink 25">
-            <div class="drink-info">
-              <span class="drink-name">Drink 25</span>
-              <span class="drink-price">$3.95</span>
+            <div class="drink-card-img">
+              <img src="images/drink25.jpg" alt="Drink 25">
+              <div class="drink-info">
+                <span class="drink-name">Drink 25</span>
+                <span class="drink-price">$3.95</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink26.jpg" alt="Drink 26">
-            <div class="drink-info">
-              <span class="drink-name">Drink 26</span>
-              <span class="drink-price">$4.25</span>
+            <div class="drink-card-img">
+              <img src="images/drink26.jpg" alt="Drink 26">
+              <div class="drink-info">
+                <span class="drink-name">Drink 26</span>
+                <span class="drink-price">$4.25</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink27.jpg" alt="Drink 27">
-            <div class="drink-info">
-              <span class="drink-name">Drink 27</span>
-              <span class="drink-price">$3.60</span>
+            <div class="drink-card-img">
+              <img src="images/drink27.jpg" alt="Drink 27">
+              <div class="drink-info">
+                <span class="drink-name">Drink 27</span>
+                <span class="drink-price">$3.60</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink28.jpg" alt="Drink 28">
-            <div class="drink-info">
-              <span class="drink-name">Drink 28</span>
-              <span class="drink-price">$4.70</span>
+            <div class="drink-card-img">
+              <img src="images/drink28.jpg" alt="Drink 28">
+              <div class="drink-info">
+                <span class="drink-name">Drink 28</span>
+                <span class="drink-price">$4.70</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink29.jpg" alt="Drink 29">
-            <div class="drink-info">
-              <span class="drink-name">Drink 29</span>
-              <span class="drink-price">$3.85</span>
+            <div class="drink-card-img">
+              <img src="images/drink29.jpg" alt="Drink 29">
+              <div class="drink-info">
+                <span class="drink-name">Drink 29</span>
+                <span class="drink-price">$3.85</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink30.jpg" alt="Drink 30">
-            <div class="drink-info">
-              <span class="drink-name">Drink 30</span>
-              <span class="drink-price">$4.60</span>
+            <div class="drink-card-img">
+              <img src="images/drink30.jpg" alt="Drink 30">
+              <div class="drink-info">
+                <span class="drink-name">Drink 30</span>
+                <span class="drink-price">$4.60</span>
+              </div>
             </div>
-          </div>
-          <div class="drink-card-img">
-            <img src="images/drink31.jpg" alt="Drink 31">
-            <div class="drink-info">
-              <span class="drink-name">Drink 31</span>
-              <span class="drink-price">$3.75</span>
+            <div class="drink-card-img">
+              <img src="images/drink31.jpg" alt="Drink 31">
+              <div class="drink-info">
+                <span class="drink-name">Drink 31</span>
+                <span class="drink-price">$3.75</span>
+              </div>
             </div>
           </div>
         </div>
@@ -302,54 +326,56 @@
       <!-- Snacks Category -->
       <details class="menu-category">
         <summary>Snacks <span class="item-count">(7 items)</span></summary>
-        <div class="snacks-grid-cards">
-          <div class="snack-card-img">
-            <img src="images/snack1.jpg" alt="Snack 1">
-            <div class="snack-info">
-              <span class="snack-name">Snack 1</span>
-              <span class="snack-price">$3.99</span>
+        <div class="menu-content">
+          <div class="snacks-grid-cards">
+            <div class="snack-card-img">
+              <img src="images/snack1.jpg" alt="Snack 1">
+              <div class="snack-info">
+                <span class="snack-name">Snack 1</span>
+                <span class="snack-price">$3.99</span>
+              </div>
             </div>
-          </div>
-          <div class="snack-card-img">
-            <img src="images/snack2.jpg" alt="Snack 2">
-            <div class="snack-info">
-              <span class="snack-name">Snack 2</span>
-              <span class="snack-price">$3.99</span>
+            <div class="snack-card-img">
+              <img src="images/snack2.jpg" alt="Snack 2">
+              <div class="snack-info">
+                <span class="snack-name">Snack 2</span>
+                <span class="snack-price">$3.99</span>
+              </div>
             </div>
-          </div>
-          <div class="snack-card-img">
-            <img src="images/snack3.jpg" alt="Snack 3">
-            <div class="snack-info">
-              <span class="snack-name">Snack 3</span>
-              <span class="snack-price">$3.99</span>
+            <div class="snack-card-img">
+              <img src="images/snack3.jpg" alt="Snack 3">
+              <div class="snack-info">
+                <span class="snack-name">Snack 3</span>
+                <span class="snack-price">$3.99</span>
+              </div>
             </div>
-          </div>
-          <div class="snack-card-img">
-            <img src="images/snack4.jpg" alt="Snack 4">
-            <div class="snack-info">
-              <span class="snack-name">Snack 4</span>
-              <span class="snack-price">$3.99</span>
+            <div class="snack-card-img">
+              <img src="images/snack4.jpg" alt="Snack 4">
+              <div class="snack-info">
+                <span class="snack-name">Snack 4</span>
+                <span class="snack-price">$3.99</span>
+              </div>
             </div>
-          </div>
-          <div class="snack-card-img">
-            <img src="images/snack5.jpg" alt="Snack 5">
-            <div class="snack-info">
-              <span class="snack-name">Snack 5</span>
-              <span class="snack-price">$3.99</span>
+            <div class="snack-card-img">
+              <img src="images/snack5.jpg" alt="Snack 5">
+              <div class="snack-info">
+                <span class="snack-name">Snack 5</span>
+                <span class="snack-price">$3.99</span>
+              </div>
             </div>
-          </div>
-          <div class="snack-card-img">
-            <img src="images/snack6.jpg" alt="Snack 6">
-            <div class="snack-info">
-              <span class="snack-name">Snack 6</span>
-              <span class="snack-price">$3.99</span>
+            <div class="snack-card-img">
+              <img src="images/snack6.jpg" alt="Snack 6">
+              <div class="snack-info">
+                <span class="snack-name">Snack 6</span>
+                <span class="snack-price">$3.99</span>
+              </div>
             </div>
-          </div>
-          <div class="snack-card-img">
-            <img src="images/snack7.jpg" alt="Snack 7">
-            <div class="snack-info">
-              <span class="snack-name">Snack 7</span>
-              <span class="snack-price">$3.99</span>
+            <div class="snack-card-img">
+              <img src="images/snack7.jpg" alt="Snack 7">
+              <div class="snack-info">
+                <span class="snack-name">Snack 7</span>
+                <span class="snack-price">$3.99</span>
+              </div>
             </div>
           </div>
         </div>
@@ -358,47 +384,49 @@
       <!-- Bakery Category -->
       <details class="menu-category">
         <summary>Bakery <span class="item-count">(6 items)</span></summary>
-        <div class="bakery-grid-cards">
-          <div class="bakery-card-img">
-            <img src="images/bakery1.jpg" alt="Bakery Item 1">
-            <div class="bakery-info">
-              <span class="bakery-name">Bakery Item 1</span>
-              <span class="bakery-price">$4.50</span>
+        <div class="menu-content">
+          <div class="bakery-grid-cards">
+            <div class="bakery-card-img">
+              <img src="images/bakery1.jpg" alt="Bakery Item 1">
+              <div class="bakery-info">
+                <span class="bakery-name">Bakery Item 1</span>
+                <span class="bakery-price">$4.50</span>
+              </div>
             </div>
-          </div>
-          <div class="bakery-card-img">
-            <img src="images/bakery2.jpg" alt="Bakery Item 2">
-            <div class="bakery-info">
-              <span class="bakery-name">Bakery Item 2</span>
-              <span class="bakery-price">$4.50</span>
+            <div class="bakery-card-img">
+              <img src="images/bakery2.jpg" alt="Bakery Item 2">
+              <div class="bakery-info">
+                <span class="bakery-name">Bakery Item 2</span>
+                <span class="bakery-price">$4.50</span>
+              </div>
             </div>
-          </div>
-          <div class="bakery-card-img">
-            <img src="images/bakery3.jpg" alt="Bakery Item 3">
-            <div class="bakery-info">
-              <span class="bakery-name">Bakery Item 3</span>
-              <span class="bakery-price">$4.50</span>
+            <div class="bakery-card-img">
+              <img src="images/bakery3.jpg" alt="Bakery Item 3">
+              <div class="bakery-info">
+                <span class="bakery-name">Bakery Item 3</span>
+                <span class="bakery-price">$4.50</span>
+              </div>
             </div>
-          </div>
-          <div class="bakery-card-img">
-            <img src="images/bakery4.jpg" alt="Bakery Item 4">
-            <div class="bakery-info">
-              <span class="bakery-name">Bakery Item 4</span>
-              <span class="bakery-price">$4.50</span>
+            <div class="bakery-card-img">
+              <img src="images/bakery4.jpg" alt="Bakery Item 4">
+              <div class="bakery-info">
+                <span class="bakery-name">Bakery Item 4</span>
+                <span class="bakery-price">$4.50</span>
+              </div>
             </div>
-          </div>
-          <div class="bakery-card-img">
-            <img src="images/bakery5.jpg" alt="Bakery Item 5">
-            <div class="bakery-info">
-              <span class="bakery-name">Bakery Item 5</span>
-              <span class="bakery-price">$4.50</span>
+            <div class="bakery-card-img">
+              <img src="images/bakery5.jpg" alt="Bakery Item 5">
+              <div class="bakery-info">
+                <span class="bakery-name">Bakery Item 5</span>
+                <span class="bakery-price">$4.50</span>
+              </div>
             </div>
-          </div>
-          <div class="bakery-card-img">
-            <img src="images/bakery6.jpg" alt="Bakery Item 6">
-            <div class="bakery-info">
-              <span class="bakery-name">Bakery Item 6</span>
-              <span class="bakery-price">$4.50</span>
+            <div class="bakery-card-img">
+              <img src="images/bakery6.jpg" alt="Bakery Item 6">
+              <div class="bakery-info">
+                <span class="bakery-name">Bakery Item 6</span>
+                <span class="bakery-price">$4.50</span>
+              </div>
             </div>
           </div>
         </div>
@@ -429,26 +457,30 @@
           <a href="https://www.google.com/maps/place/Sukoon+Ghar/@43.7905554,-79.758471,17z/data=!3m1!4b1!4m6!3m5!1s0x882b19fdc3898557:0xa3378e557a6d6f3b!8m2!3d43.7905516!4d-79.7558961!16s%2Fg%2F11x8jsz5s5?entry=ttu&g_ep=EgoyMDI1MDQyOS4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" target="_blank" class="map-btn-small">Map</a>
         </div>
       </div>
-      <form class="cafe-contact-form" action="https://formsubmit.co/jenil480@gmail.com" method="POST">
-        <!-- FormSubmit configuration -->
-        <input type="hidden" name="_next" value="https://jenilsite.netlify.app">
-        <input type="hidden" name="_subject" value="New Contact Form Submission">
-        <input type="hidden" name="_captcha" value="false">
-        
-        <div class="form-group">
-          <label for="fullName">Full Name</label>
-          <input type="text" id="fullName" name="name" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="cafe-contact-btn">Contact Us</button>
-      </form>
+      <div class="findus-info-icons">
+        <form class="cafe-contact-form" action="https://formsubmit.co/jenil480@gmail.com" method="POST">
+          <!-- FormSubmit configuration -->
+          <input type="hidden" name="_next" value="https://jenilsite.netlify.app">
+          <input type="hidden" name="_subject" value="New Contact Form Submission">
+          <input type="hidden" name="_captcha" value="false">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <i class="fas fa-user"></i>
+            <input type="text" id="fullName" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <i class="fas fa-comment"></i>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="cafe-contact-btn">Contact Us</button>
+        </form>
+      </div>
     </div>
   </section>
   
@@ -458,5 +490,25 @@
 
 
   <script src="script.js"></script>
+
+  <!-- Modal for menu images -->
+  <div id="menuImageModal" style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); align-items:center; justify-content:center;">
+    <span id="closeMenuImageModal" style="position:absolute; top:30px; right:40px; font-size:2.5rem; color:#fff; cursor:pointer; z-index:10001;">&times;</span>
+    <img id="modalMenuImage" src="" alt="Menu Item" style="max-width:90vw; max-height:80vh; border-radius:18px; box-shadow:0 8px 32px rgba(60,40,20,0.25); background:#fff; display:block; margin:auto;">
+  </div>
+  <script>
+    document.querySelectorAll('.drink-card-img img, .snack-card-img img, .bakery-card-img img').forEach(img => {
+      img.onclick = function() {
+        document.getElementById('modalMenuImage').src = this.src;
+        document.getElementById('menuImageModal').style.display = 'flex';
+      };
+    });
+    document.getElementById('closeMenuImageModal').onclick = function() {
+      document.getElementById('menuImageModal').style.display = 'none';
+    };
+    document.getElementById('menuImageModal').onclick = function(e) {
+      if (e.target === this) this.style.display = 'none';
+    };
+  </script>
 </body>
 </html> 
