@@ -883,16 +883,17 @@ section {
 /* New styles for the Find Us section */
 .findus-section {
   background: var(--beige);
-  padding-top: 1.2rem;
-  padding-bottom: 2rem;
+  padding: 1.2rem 1rem 2rem 1rem;
   animation: fadeInUp 1s;
 }
+
 .findus-section h2 {
   text-align: center;
   color: var(--brown);
   margin-bottom: 2rem;
   font-size: 2rem;
 }
+
 .findus-content {
   display: flex;
   flex-direction: row;
@@ -900,6 +901,7 @@ section {
   max-width: 900px;
   margin: 0 auto;
   align-items: stretch;
+  padding: 0 1rem;
 }
 
 .findus-info-icons {
@@ -1012,4 +1014,51 @@ section {
   min-height: 100vh;
   background: 
     linear-gradient(rgba(245,238,230,0.92), rgba(245,238,230,0.96));
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .findus-content {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0;
+  }
+
+  .findus-info-icons {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .findus-info-icons.contact-form {
+    margin-bottom: 1rem;
+  }
+
+  .cafe-contact-form {
+    width: 100%;
+  }
+
+  .cafe-contact-form .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .cafe-contact-form input,
+  .cafe-contact-form textarea {
+    padding: 0.8rem 1rem 0.8rem 2.5rem;
+    font-size: 0.95rem;
+  }
+
+  .cafe-contact-btn {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .contact-icon-row {
+    font-size: 1rem;
+    padding: 0.8rem 0;
+  }
+
+  .contact-icon-row i {
+    font-size: 1.5rem;
+  }
 }
