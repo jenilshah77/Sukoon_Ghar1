@@ -480,20 +480,7 @@ section h2 {
   box-shadow: none;
 }
 
-.drinks-grid-cards,
-.snacks-grid-cards,
-.bakery-grid-cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1.5rem 0;
-  scroll-snap-type: none;
-  overflow-x: unset;
-}
-
+/* Unified Card Styles for Menu Items */
 .drink-card-img,
 .snack-card-img,
 .bakery-card-img {
@@ -503,93 +490,107 @@ section h2 {
   justify-content: flex-start;
   text-align: center;
   min-width: 0;
-  max-width: 180px;
-  padding: 2rem 1.2rem 1.5rem 1.2rem;
+  max-width: 100%;
+  padding: 1.2rem 1rem 1.5rem 1rem;
   background: #fff;
   border: 1.5px solid #e7e0d8;
-  border-radius: 18px;
+  border-radius: 14px;
   box-shadow: 0 2px 12px rgba(60, 40, 20, 0.08);
   transition: box-shadow 0.2s, transform 0.2s;
   height: 100%;
   margin: 0 auto;
 }
 
+.drink-card-img:hover,
+.snack-card-img:hover,
+.bakery-card-img:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(60, 40, 20, 0.15);
+}
+
 .drink-card-img img,
 .snack-card-img img,
 .bakery-card-img img {
   display: block;
-  margin: 0 auto 0.7rem auto;
   width: 100%;
-  max-width: 120px;
+  max-width: 220px;
   aspect-ratio: 1/1;
+  height: 160px;
   object-fit: cover;
-  border-radius: 14px;
+  border-radius: 10px;
   box-shadow: 0 1px 6px rgba(60, 40, 20, 0.10);
   background: var(--green);
   cursor: pointer;
-  transition: box-shadow 0.2s, transform 0.2s;
+  transition: transform 0.3s ease;
+  margin-bottom: 1rem;
 }
 
-.drink-card-img img:hover, .snack-card-img img:hover, .bakery-card-img img:hover {
-  box-shadow: 0 4px 24px rgba(60, 40, 20, 0.18);
-  transform: scale(1.05);
+.drink-info,
+.snack-info,
+.bakery-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  width: 100%;
+  padding: 0.3rem 0 0 0;
 }
 
 .drink-name, .snack-name, .bakery-name {
-  margin-bottom: 0.3rem;
-  font-size: 1.08rem;
+  font-size: 1.15rem;
   font-weight: 600;
   color: var(--brown);
   letter-spacing: 0.5px;
   text-align: center;
+  margin-bottom: 0.2rem;
 }
 
 .drink-price, .snack-price, .bakery-price {
-  font-size: 1rem;
+  font-size: 1.05rem;
   color: var(--green);
   font-weight: 500;
-  margin-bottom: 0.1rem;
   text-align: center;
 }
 
-@media (max-width: 900px) {
-  .drink-card-img, .snack-card-img, .bakery-card-img {
-    max-width: 140px;
-    min-width: 140px;
-    padding: 1.2rem 0.7rem 1rem 0.7rem;
-  }
-  .drink-card-img img, .snack-card-img img, .bakery-card-img img {
-    max-width: 80px;
-  }
-}
-@media (max-width: 600px) {
-  .drink-card-img, .snack-card-img, .bakery-card-img {
-    max-width: 100%;
-    min-width: 0;
-    padding: 1rem 0.5rem 0.7rem 0.5rem;
-  }
-  .drink-card-img img, .snack-card-img img, .bakery-card-img img {
-    max-width: 60px;
-  }
+/* 2 cards per row for menu grids */
+.drinks-grid-cards,
+.snacks-grid-cards,
+.bakery-grid-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .drinks-grid-cards,
   .snacks-grid-cards,
   .bakery-grid-cards {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    padding: 1rem 0;
-  }
-}
-
-@media (max-width: 600px) {
-  .drinks-grid-cards,
-  .snacks-grid-cards,
-  .bakery-grid-cards {
-    grid-template-columns: 1fr;
     gap: 0.7rem;
-    padding: 0.5rem 0;
+    padding: 0.5rem;
+  }
+  .drink-card-img,
+  .snack-card-img,
+  .bakery-card-img {
+    padding: 0.5rem 0.2rem 0.7rem 0.2rem;
+  }
+  .drink-card-img img,
+  .snack-card-img img,
+  .bakery-card-img img {
+    max-width: 90px;
+    height: 70px;
+    margin-bottom: 0.5rem;
+  }
+  .drink-name, .snack-name, .bakery-name {
+    font-size: 0.92rem;
+    margin-bottom: 0.1rem;
+  }
+  .drink-price, .snack-price, .bakery-price {
+    font-size: 0.85rem;
   }
 }
 
@@ -800,10 +801,29 @@ section {
   margin-bottom: 1.2rem;
 }
 
+.cafe-contact-form .label-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cafe-contact-form label {
+  font-size: 1rem;
+  color: var(--brown);
+  font-weight: 500;
+  display: inline-block;
+}
+
+.cafe-contact-form .label-icon i {
+  color: var(--green);
+  font-size: 1.1rem;
+}
+
 .cafe-contact-form input,
 .cafe-contact-form textarea {
   width: 100%;
-  padding: 0.9rem 1rem 0.9rem 2.5rem;
+  padding: 0.9rem 1rem;
   background: #fff;
   border: 1.5px solid #e7e0d8;
   border-radius: 8px;
@@ -814,28 +834,11 @@ section {
   outline: none;
   box-shadow: 0 1px 4px rgba(60, 40, 20, 0.06);
 }
+
 .cafe-contact-form input:focus,
 .cafe-contact-form textarea:focus {
   border: 1.5px solid var(--green);
   box-shadow: 0 2px 8px rgba(60, 40, 20, 0.08);
-}
-
-.cafe-contact-form label {
-  font-size: 1rem;
-  color: var(--brown);
-  margin-bottom: 0.2rem;
-  font-weight: 500;
-  display: block;
-}
-
-.cafe-contact-form .form-group i {
-  position: absolute;
-  left: 0.8rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--green);
-  font-size: 1.1rem;
-  pointer-events: none;
 }
 
 .cafe-contact-btn {
@@ -1060,5 +1063,25 @@ section {
 
   .contact-icon-row i {
     font-size: 1.5rem;
+  }
+
+  .cafe-contact-form .form-group i {
+    top: 2.2rem;
+  }
+  
+  .cafe-contact-form textarea + i {
+    top: 3.3rem;
+  }
+
+  .cafe-contact-form .label-icon {
+    gap: 0.3rem;
+  }
+  
+  .cafe-contact-form label {
+    font-size: 0.95rem;
+  }
+  
+  .cafe-contact-form .label-icon i {
+    font-size: 1rem;
   }
 }
