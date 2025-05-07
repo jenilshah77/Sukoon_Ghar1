@@ -1085,3 +1085,71 @@ section {
     font-size: 1rem;
   }
 }
+
+.bakery-grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.bakery-card-img {
+  background: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+.bakery-card-img:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(60, 40, 20, 0.15);
+}
+
+.bakery-card-img img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(141, 103, 72, 0.1);
+}
+
+.bakery-info {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bakery-name {
+  font-weight: 600;
+  color: var(--dark-brown);
+  font-size: 1.1rem;
+}
+
+.bakery-price {
+  color: var(--brown);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .bakery-grid-cards {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+
+  .bakery-card-img img {
+    height: 180px;
+  }
+
+  .bakery-name {
+    font-size: 1rem;
+  }
+
+  .bakery-price {
+    font-size: 0.9rem;
+  }
+}
