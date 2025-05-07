@@ -569,28 +569,37 @@ section h2 {
   .drinks-grid-cards,
   .snacks-grid-cards,
   .bakery-grid-cards {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.7rem;
-    padding: 0.5rem;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    padding: 1rem;
   }
+
   .drink-card-img,
   .snack-card-img,
   .bakery-card-img {
-    padding: 0.5rem 0.2rem 0.7rem 0.2rem;
+    padding: 1rem;
+    max-width: 100%;
+    margin: 0 auto;
   }
+
   .drink-card-img img,
   .snack-card-img img,
   .bakery-card-img img {
-    max-width: 90px;
-    height: 70px;
-    margin-bottom: 0.5rem;
+    width: 100%;
+    height: 200px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
   }
+
   .drink-name, .snack-name, .bakery-name {
-    font-size: 0.92rem;
-    margin-bottom: 0.1rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
   }
+
   .drink-price, .snack-price, .bakery-price {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
 }
 
